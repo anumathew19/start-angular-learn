@@ -1,1 +1,7 @@
-<h3>I'm in the AppComponent!</h3>
+<label>Server Name</label>
+<input class="form-control" type="text" (input)="onUpdateServerName($event)">
+<p>{{serverName}}</p>
+<button  class="btn" [disabled]="!allownewuser" (click)="oncreateserver()">
+    Add Server</button>
+    {{allownewuser}}
+    <p [innerText]="allownewuser"></p>
