@@ -1,7 +1,14 @@
 <label>Server Name</label>
-<input class="form-control" type="text" (input)="onUpdateServerName($event)">
+<div><input class="form-control" type="text" (input)="onUpdateServerName($event)"></div>
 <p>{{serverName}}</p>
 <button  class="btn" [disabled]="!allownewuser" (click)="oncreateserver()">
     Add Server</button>
     {{allownewuser}}
     <p [innerText]="allownewuser"></p>
+    <!-- combining all forms of databinding -->
+<p>{{serverStatus}}</p>
+    <!-- To way binding -->
+    <label>User Name</label>
+    <div>
+        <input class="form-control" type="text" [(ngModel)]="serverName">
+    </div>

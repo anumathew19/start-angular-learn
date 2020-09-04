@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StartAnglrComponent implements OnInit {
 allownewuser=false;
-serverStatus= "No server was created";
+serverStatus= "No server was created!";
 serverName='';
   constructor() {
     setTimeout(()=>{this.allownewuser=true},2000)
@@ -17,12 +17,13 @@ serverName='';
   }
 
 oncreateserver(){
-  this.serverStatus='server was created';
+  this.serverStatus='server was created! Name is '+ this.serverName;
 }
 
 onUpdateServerName(event:Event){
   console.log(event);
   this.serverName= (<HTMLInputElement>event.target).value;
+
 }
 
 }
