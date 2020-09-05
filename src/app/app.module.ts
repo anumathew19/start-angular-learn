@@ -6,6 +6,7 @@ import { StartAnglrComponent } from './start-anglr/start-anglr.component';
 import { ServerComponent } from './server/server.component';
 import { SuccessAlertComponent } from './success-alert/success-alert.component';
 import { WarningAlertComponent } from './warning-alert/warning-alert.component';
+import { NmbrcolorchngComponent } from './nmbrcolorchng/nmbrcolorchng.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { WarningAlertComponent } from './warning-alert/warning-alert.component';
     StartAnglrComponent,
     ServerComponent,
     SuccessAlertComponent,
-    WarningAlertComponent
+    WarningAlertComponent,
+    NmbrcolorchngComponent
   ],
   imports: [
     BrowserModule,

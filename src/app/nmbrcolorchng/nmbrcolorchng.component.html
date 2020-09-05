@@ -1,0 +1,10 @@
+<button class="btn" (click)="showSecret = !showSecret">Display Details</button>
+<p *ngIf="showSecret"> Secret password = eby </p>
+
+<p></p>
+<button class="btn" (click)="onToggleDetail()">Show Details</button>
+<p *ngIf="showSecret"> Secret password = jessal </p>
+<div *ngFor="let logItem of log"
+ [ngStyle]="{backgroundColor: logItem>=5 ?'yellow' : 'transparent'}" [ngClass]="{'white-text': logItem>=5}">
+{{logItem}}
+</div>
